@@ -12,7 +12,7 @@ for(var position = 0; position < mySentence.length; position++) {
 return letterCount; 
 }
 
-console.log(characterCount("The big brown bear climbed up the tree", "o")); 
+console.log(characterCount("the big brown bear climbed up the tree", "o")); 
 
 /* Step 1: define a javascript function that accepts a string and a letter as a perameter
    Step 2: define a variable called letterCount and set it equal to 0. 
