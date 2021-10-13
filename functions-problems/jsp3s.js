@@ -4,7 +4,7 @@
 function characterCount(mySentence, letter) {
 var letterCount = 0;
 for(var position = 0; position < mySentence.length; position++) {
-  if (mySentence.charAt(position) == letter) {
+  if (mySentence.toLowerCase()charAt(position) == letter.toLowerCase()) {
     letterCount += 1; 
   }
 }
