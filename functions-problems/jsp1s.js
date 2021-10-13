@@ -17,7 +17,7 @@ console.log(findLongestWord("The big brown bear climbed up the tree"));
 
 
   
-/* step 1: definte a javascript function that accepts a string as a parameter
+/* step 1: define a javascript function that accepts a string as a parameter
    step 2: split the string passed in, turn it into an array of words
    step 3: define a variable called longestWord and set the initial value equal to 0. 
    step 4: start looping through our array of words in the sentence
