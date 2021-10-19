@@ -1,0 +1,41 @@
+<!-- 
+Problem 2: Create a P element with a link inside.
+
+Then, write a JavaScript function to get the HREF attribute of the link.
+
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+<meta charset=utf-8 /> 
+<title>Collect the value of the href attribute of a link</title> 
+</head> 
+<body> 
+	<p><a id="ravens"  href="https://www.baltimoreravens.com/">bmorebirds</a></p> 
+	<button onclick="getAttributes()">Click here to get the href value</button> 
+	<script>
+	function getAttributes() {
+		var u = document.getElementById("ravens").href;
+ alert('The value of the href attribute of the link is : '+u);
+	}  
+    </script>
+</body>
+</html>
+
+<!--
+
+	Step 1: Write normal HTML syntax with doctype, lang, head, etc. 
+	Step 2: Once you get to paragraph tag, include an ID to tag it to the javascript element. 
+	Used "ravens".
+	Step 3: Use a button tag to demonstrate what URL you will be visiting when you click on it. 
+	Step 4: Include a script tag to input Javascript code.
+	Step 5: Name your function "getAttributes", as you want to get the href attribute. 
+	Step 6: define an element by the document. getElementbyID tag, and tag it with your ID previously used: "ravens".
+	Step 7: Describe what you will see when you click on the button. This will be an "alert" stating the website URL.
+	Step 8: close javascript function.
+	Step 9: end HTML with correct tags. 
+
+-->
