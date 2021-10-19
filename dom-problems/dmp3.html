@@ -1,0 +1,50 @@
+<!--
+Problem 3: Create a basic HTML page with a table and two rows in it.
+Then, write a JavaScript function to add rows to a table.
+
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+<meta charset=utf-8 /> 
+<title>Insert row in a table using javascript</title> 
+</head>
+<body> 
+	<table id="myTable" border=5> 
+	<tr><td>Row1 cell1</td> 
+	<td>Row1 cell2</td></tr> 
+	<tr><td>Row2 cell1</td> 
+	<td>Row2 cell2</td></tr> 
+	</table><br> 
+	<input type="button" onclick="insert_Row()" value="Insert row">
+	<script>
+	function insert_Row(){
+	  var x=document.getElementById('myTable').insertRow(0);
+	  var y = x.insertCell(0);
+	  var z = x.insertCell(1);
+	  y.innerHTML="New Cell1";
+	  z.innerHTML="New Cell2";
+    }
+    </script>
+
+</body>
+</html>
+
+<!--
+
+	Step 1: Write normal HTML syntax with doctype, lang, head, etc. 
+	Step 2: Once you get to body of the HTML, insert a table tag.
+	Step 3: Define a small table with four total cells, two rows with two cells each. 
+	Step 4: Use a button tag to demonstrate the insertion of cells into your table, and call it "Inset Row".
+	Step 5: Include a script tag to input JavaScript code. 
+	Step 6: Name your function "insert_Row" for clarity. 
+	Step 7: define an element by the document.getElementById tag, and tag it with your Id previously used: "myTable".
+	Step 8: define two more elements, y and z, that insert a cell at the first empty spot and the second empty spot in the new table.
+	Step 9: use "innerHTML" to add our HTML using y.innerHTML and z.innerHTML
+	Step 10: close javascript function.
+	Step 11: end HTML with correct tags.
+
+-->
