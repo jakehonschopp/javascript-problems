@@ -1,0 +1,37 @@
+<!-- 
+	Problem 4: Create an HTML page with a dropdown list with three items in it, then write a JavaScript function that displays the number of items and displays the item in the list.
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+<meta charset=utf-8 /> 
+<title>JavaScript function that displays items in a list</title> 
+</head>
+<script> 
+	function getChoices(){
+	const myCardinals=document.getElementById("cardinals")
+	const numOfItems = document.getElementById("cardinals").length;
+	alert("Here are your choices : "+numOfItems +myCardinals);
+    console.log(numOfItems);	
+
+	for (let i = 0; i < myCardinals.length; i++) {
+		console.log(myCardinals.options[i].text); 
+	}
+
+	}
+</script>
+<body> 
+   <form>
+   Select your favorite Louisville Cardinal:
+   <select id="cardinals" onchange="favCardinal()">
+     <option>Lamar Jackson</option>
+     <option>Donovan Mitchell</option>
+     <option>Henry Davis</option>
+   </select>
+   <input type="button" onclick="getChoices()" value="Count and Output all items">
+   <p id="p1"></p>
+</body>
+</html> 
