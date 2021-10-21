@@ -22,9 +22,9 @@ Then, write a JavaScript function to add rows to a table.
 	<input type="button" onclick="insert_Row()" value="Insert row">
 	<script>
 	function insert_Row(){
-	  var x=document.getElementById('myTable').insertRow(0);
-	  var y = x.insertCell(0);
-	  var z = x.insertCell(1);
+	  const x = document.getElementById('myTable').insertRow(0);
+	  const y = x.insertCell(0);
+	  const z = x.insertCell(1);
 	  y.innerHTML="New Cell1";
 	  z.innerHTML="New Cell2";
     }
