@@ -4,7 +4,7 @@ Example array: var my Color=["Red", "Green", "White", "Black"];
 
 */
 
-myGame = ["Cuphead", "Bioshock", "Doom", "Rocket League"];
+const myGame = ["Cuphead", "Bioshock", "Doom", "Rocket League"];
 
 console.log(myGame.toString()); 
 console.log(myGame.join(" , ")); 

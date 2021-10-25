@@ -22,7 +22,7 @@ var getArrayItems = function(array, num) {
     return "Number too big";
  
    return array.slice(0, num);
-  }; 
+  } 
     
 console.log(getArrayItems(colorArray, 3));
 console.log(getArrayItems(colorArray, 13));
