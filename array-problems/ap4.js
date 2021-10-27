@@ -2,18 +2,23 @@
 */
 
 
-const myArray = [17, 18, 18, 18, 1, 1, 2, 3];
 
-let unique = [...new Set(myArray)];
+function getNew(arr){
 
-console.log(unique);
+    let newArr = [...new Set(arr)];
+
+    console.log(newArr);
+}
+
+const array = [1, 2, 3, 2, 3];
 
 
+getNew(array);
 
 /* Step 1: define an array of numbers or otherwise
-   Step 2: define a new variable name for your new array 
-   Step 3: Use the "Set" function on your array to give it new values
+   Step 2: define a function named "called getNew" and use an arr as a parameter 
+   Step 3: Define a new variable called "newArr" that will be the new array name after the duplicates are removed.
    Step 4: Use console log to see if your new array has gotten rid of all of the duplicate numbers.
-   Step 5: Should return 17, 18, 1, 2, 3.
+   Step 5: Should return 1, 2, 3.
 
 */
