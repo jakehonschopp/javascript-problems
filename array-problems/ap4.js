@@ -18,7 +18,8 @@ getNew(array);
 /* Step 1: define an array of numbers or otherwise
    Step 2: define a function named "called getNew" and use an arr as a parameter 
    Step 3: Define a new variable called "newArr" that will be the new array name after the duplicates are removed.
-   Step 4: Use console log to see if your new array has gotten rid of all of the duplicate numbers.
-   Step 5: Should return 1, 2, 3.
+   Step 4: Since Set is a collection of new values, all of the duplicates should have been removed. 
+   Step 5: Use console log to see if your new array has gotten rid of all of the duplicate numbers.
+   Step 6: Should return 1, 2, 3.
 
 */
