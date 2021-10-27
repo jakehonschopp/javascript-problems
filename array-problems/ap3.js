@@ -2,19 +2,28 @@
 */
 
 
-var numbers = [5, 2, -1, 143]
+const arrayOfNumbers = [-2, 1, -1, 0, 2];
 
-var numbers = numbers.sort(function(a, b) {
-	return a - b;
-});
+function sortNumber(arr){
+    arr.sort(function(a,b){ 
+        if (a < b) {
+            return -1;
+        }
+        if(a > b) {
+            return 1;
+        }
+        return 0;
+    });
+}
 
-console.log(numbers)
-
+console.log(sortNumber(arrayOfNumbers)); 
 /* 
 
 Step 1: define an array of numbers (or of anything)
-Step 2: sort the array users the array.sort method
-Step 3: pass in the compare function so that the function knows to sort in ascending order ("return a-b")
-Step 4: close the function correctly 
+Step 2: write a function called sortNumber
+Step 3: use the "sort" method and the a, b comparison so the function knows that you want to count in ascending order.
+Step 4: define the cases included in the a, b comparison so that the function returns the correct order.
 Step 5: console log to test if the numbers are in ascending order
-Step 6: return -1, 2, 5, 143
+Step 6: return -2, -1, 0, 1, 2
+
+*/

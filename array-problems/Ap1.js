@@ -8,7 +8,7 @@ your function returns the first 2 elements in that array.)
 colorArray = ["blue", "red", "purple", "green", "silver", "gold"]
 
 var getArrayItems = function(array, num) {
-    if(array === null)
+  if(array === null)
       return "Input the correct array";
   
   

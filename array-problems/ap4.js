@@ -2,7 +2,7 @@
 */
 
 
-var myArray = [17, 18, 18, 18, 1, 1, 2, 3];
+const myArray = [17, 18, 18, 18, 1, 1, 2, 3];
 
 let unique = [...new Set(myArray)];
 
