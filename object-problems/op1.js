@@ -20,7 +20,7 @@ function eraseProperty (object, property) {
 
 
 
-console.log(eraseProperty(goat, heisman));
+console.log(eraseProperty(goat, "heisman"));
 
 
 /* Possibility 1 - 
