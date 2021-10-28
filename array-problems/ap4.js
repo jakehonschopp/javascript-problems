@@ -55,3 +55,5 @@ Step 6: Throughout each loop, using indexOf and push, during each iteration wher
 and add it to "uniqueArray".
 Step 7: return the value of the stored variable "uniqueArray"
 Step 8: Console log to see if the value is returned correctly. Should Return "Gandalf, Frodo, Sam, Gimli, Legolas" without duplicates.
+
+*/
