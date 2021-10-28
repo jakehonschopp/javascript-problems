@@ -5,12 +5,11 @@ your function returns the first 2 elements in that array.)
 
 */
 
-colorArray = ["blue", "red", "purple", "green", "silver", "gold"]
+const colorArray = ["blue", "red", "purple", "green", "silver", "gold"];
 
 var getArrayItems = function(array, num) {
   if(array === null)
-      return "Input the correct array";
-  
+    return "Input the correct array";
   
   if(num === null)
     return "Enter number";
@@ -21,8 +20,8 @@ var getArrayItems = function(array, num) {
   if(num > array.length)
     return "Number too big";
  
-   return array.slice(0, num);
-  } 
+  return array.slice(0, num);
+}    
     
 console.log(getArrayItems(colorArray, 3));
 console.log(getArrayItems(colorArray, 13));

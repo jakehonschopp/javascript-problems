@@ -7,12 +7,12 @@ function getNew(arr){
 
     let newArr = [...new Set(arr)];
 
-    console.log(newArr);
+    return newArr;
 }
 
 const array = [1, 2, 3, 2, 3];
 
-
+console.log(newArr);
 getNew(array);
 
 /* Step 1: define an array of numbers or otherwise
@@ -23,3 +23,35 @@ getNew(array);
    Step 6: Should return 1, 2, 3.
 
 */
+
+
+/* Problem 4 without using set/ Write a javascript program that removes duplicates from an array
+*/
+
+
+    function getUnique(array){
+        var uniqueArray = [];
+        
+        
+        for(i=0; i < array.length; i++){
+            if(uniqueArray.indexOf(array[i]) === -1) {
+                uniqueArray.push(array[i]);
+            }
+        }
+        return uniqueArray;
+    }
+    
+var names = ["Gandalf", "Frodo", "Frodo", "Sam", "Gimli", "Legolas"];
+var uniqueNames = getUnique(names);   
+console.log(uniqueNames);  
+  
+
+/* Step 1: define an array of any kind (chose "names") using var
+Step 2: Define a variable with the name of the new array, that will be without duplicates (chose "uniqueNames")
+Step 3: Write the function, and choose a clear function name for readability ("getUnique")
+Step 4: Store the variable uniqueArray and set it equal to "[]", as it will be defined later.
+Step 5: Run a for loop, iterating for unique values in the array.
+Step 6: Throughout each loop, using indexOf and push, during each iteration where the loop encounters a new value, set it equal to -1 
+and add it to "uniqueArray".
+Step 7: return the value of the stored variable "uniqueArray"
+Step 8: Console log to see if the value is returned correctly. Should Return "Gandalf, Frodo, Sam, Gimli, Legolas" without duplicates.
