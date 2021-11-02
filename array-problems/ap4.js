@@ -30,10 +30,10 @@ getNew(array);
 
 
     function getUnique(array){
-        var uniqueArray = [];
+        let uniqueArray = [];
         
         
-        for(i=0; i < array.length; i++){
+        for(let i = 0; i < array.length; i++){
             if(uniqueArray.indexOf(array[i]) === -1) {
                 uniqueArray.push(array[i]);
             }
@@ -41,8 +41,8 @@ getNew(array);
         return uniqueArray;
     }
     
-var names = ["Gandalf", "Frodo", "Frodo", "Sam", "Gimli", "Legolas"];
-var uniqueNames = getUnique(names);   
+const names = ["Gandalf", "Frodo", "Frodo", "Sam", "Gimli", "Legolas"];
+const uniqueNames = getUnique(names);   
 console.log(uniqueNames);  
   
 
