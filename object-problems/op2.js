@@ -2,7 +2,7 @@
 and write a javascript program that displays the first and last names.
 */
 
-const arrayOfNames = [
+const arrayOfPeopleObjects = [
     {
 		firstName: "Lamar",
 		lastName: "Jackson",
@@ -27,8 +27,8 @@ const arrayOfNames = [
     }
     ]; 
 
-const displayNames = arrayOfNames.forEach(function(i) {
-    console.log(i.firstName + ' ' + i.lastName)
+const displayNames = arrayOfNames.forEach(function(person) {
+    console.log(person.firstName + ' ' + person.lastName)
 });
 
 /* 
