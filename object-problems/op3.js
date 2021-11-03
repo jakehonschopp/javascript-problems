@@ -27,3 +27,4 @@ Step 4: Describe a javascript function and what you want it to do "tellMeObjectL
 Step 5: return using object.keys.(a).length method because it is the most simple
 Step 6: console log and call back the function name, as well as the variable name
 Step 7: returns 4
+*/ 
